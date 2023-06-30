@@ -1,0 +1,44 @@
+body {
+  margin: 5px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.states {
+  display: block;
+  border: 5px solid lightgray;
+  width: calc(33% - 10px);
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px;
+}
+
+.letter-box{
+  display: flex;
+}
+
+.letters{
+    background-color: lightgray;
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+@media(max-width: 800px){
+    .states{
+      width: 45%;
+    }
+}
+
+@media(max-width: 500px){
+    .states{
+      width: 100%;
+    }
+}
